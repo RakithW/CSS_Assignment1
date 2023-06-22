@@ -1,0 +1,248 @@
+/* Custom Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Inter+Tight:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 11%, rgba(83, 42, 29, 1) 50%, rgba(0, 0, 0, 1) 95%);
+    text-align: center;
+    position: relative;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 11%, rgba(83, 42, 29, 1) 50%, rgba(0, 0, 0, 1) 95%);
+    /* gradient background */
+    text-align: center;
+    position: relative;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+header:hover {
+    filter: brightness(1.5);
+    transition: 1s;
+}
+
+header:not(:hover) {
+    filter: brightness(1);
+    transition: 1s;
+}
+
+/* Added a custom h3, because I wanted to adjust the h3 without affecting the h3.select, h3.archives, h3.resources */
+.custom-h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Cormorant', serif;
+    font-family: 'Inter Tight', sans-serif;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* ID selector */
+#zen-summary.summary,
+#zen-preamble.preamble,
+#zen-explanation.explanation,
+#zen-participation.participation,
+#zen-benefits,
+#zen-requirements.requirements {
+    background-color: rgba(120, 60, 44, 0.5);
+}
+
+/* Class Selector */
+.page-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(82, 41, 28, 0.7);
+    position: relative;
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #788494;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0;
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #D4CDDC;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+    color: #fff;
+    transition: 1s;
+}
+
+/* Type Selector */
+body {
+    font: 75% georgia, sans-serif;
+    line-height: 1.88889;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    padding-right: 10em;
+    padding-left: 10em;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(./Images/Photo\ by\ Will\ Swann\ on\ Unsplash.jpeg) no-repeat bottom right;
+    /*background img */
+    background-size: cover;
+    filter: brightness(0.3);
+    z-index: -1;
+    box-shadow: inset 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(116, 60, 41, 1) 11%, rgba(83, 42, 29, 1) 50%, rgba(0, 0, 0, 1) 95%);
+    padding: 5em;
+}
+
+footer:hover {
+    filter: brightness(1.5);
+    transition: 1s;
+}
+
+footer:not(:hover) {
+    filter: brightness(1);
+    transition: 1s;
+}
+
+footer .zen-validate-html {
+    padding: 3.5em;
+    margin-right: 10em;
+    background-image: url(Images/104453_html5_html_5_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+footer .zen-validate-css {
+    padding: 3.5em;
+    margin-right: 10em;
+    background-image: url(Images/9055543_bxs_file_css_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+footer .zen-license {
+    padding: 3.5em;
+    margin-right: 9em;
+    background-image: url(Images/4373089_commons_creative_logo_logos_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+footer .zen-accessibility {
+    padding: 3.5em;
+    margin-right: 10em;
+    background-image: url(Images/9054361_bx_accessibility_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+footer .zen-github {
+    padding: 3.5em;
+    background-image: url(Images/211904_social_github_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+}
+
+h3.select,
+h3.archives,
+h3.resources {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: center;
+}
+
+a.design-name {
+    color: #fff;
+}
+
+a.designer-name {
+    color: #fff;
+}
+
+.design-archives a {
+    color: #fff;
+}
+
+.zen-resources a {
+    color: #fff;
+}
+
+/* Attribute Selector */
+.sidebar[role] {
+    background: linear-gradient(0deg, rgba(116, 60, 41, 1) 11%, rgba(83, 42, 29, 1) 90%, rgba(0, 0, 0, 1) 100%);
+}
+
+.sidebar:hover {
+    filter: brightness(1.5);
+    transition: 1s;
+}
+
+/* child Combinator */
+aside>div {
+    text-align: center;
+    margin: 3m;
+}
+
+aside>div>div {
+    margin: 3em;
+    text-align: center
+}
+
+.wrapper {
+    display: flex;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+    flex: 1;
+}
